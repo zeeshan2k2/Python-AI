@@ -47,7 +47,7 @@ import calendar
 
 
 
-# # Union, Compliment and Intersection
+# Union, Compliment and Intersection
 # array1 = [1, 1, 3, 9, 5, 2]
 # array2 = [2, 3, 8, 9, 7, 2]
 # array1WithoutDuplicates = []
@@ -72,7 +72,6 @@ import calendar
 #
 # def resetAll():
 #     clearingAllArrays()
-#
 #     removingDuplicates()
 #
 # def operationSet():
@@ -152,7 +151,7 @@ import calendar
 
 
 # # Calender
-# yy = 2024
-# mm = 2
+# yy = int(input("Enter valid year: "))
+# mm = int(input("Enter valid month: "))
 # print(calendar.month(yy, mm))
 
