@@ -20,7 +20,6 @@ print(Output)
 inputStr = "willingly stealing a bike from the mailmen"
 splitting = inputStr.split()
 toSort = tuple(splitting)
-print(toSort)
 sorting = sorted(toSort)
 
 sortedStr = ""
