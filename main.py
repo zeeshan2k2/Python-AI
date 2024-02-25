@@ -1,16 +1,34 @@
-# This is a sample Python script.
+# deleting punctuation from string
+questionString = "Hey fellas! I'm new in town here can you help me navigate this area?"
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+Output = ""
+toRemove = '!""()-_{}[];:/?\<>.@#$%^&*~`'
+
+for char in questionString:
+    if char not in toRemove:
+        Output = Output + char
+
+print(questionString)
+print()
+print("below is the same string without the punctuation.")
+print(Output)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
+# program to print a sorted string input
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+inputStr = "willingly stealing a bike from the mailmen"
+splitting = inputStr.split()
+toSort = tuple(splitting)
+print(toSort)
+sorting = sorted(toSort)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+sortedStr = ""
+
+for word in sorting:
+    sortedStr += word
+    sortedStr += " "
+
+print()
+print(f"question String: {inputStr}")
+print(f"sorted string: {sortedStr}")
