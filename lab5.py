@@ -12,17 +12,14 @@ print()
 
 arr2 = [13, 3, 5, 8, 2, 16, 14]
 
-
 maxVal = arr2[0]
 minVal = arr2[0]
-
 
 for i in arr2:
     if i > maxVal:
         maxVal = i
     elif i < minVal:
         minVal = i
-
 
 print(f"This is the given array: {arr2}")
 print(f"This is the maximum value: {maxVal}")
@@ -62,13 +59,13 @@ midVal = arr4[mid]
 if numberInput < arr4[lower] or numberInput > arr4[upper]:
     print("Number not in array")
 elif numberInput == midVal:
-    print(f"{numberInput} found at index {mid}")
+    print(f"{numberInput} found at index {mid} of array {arr4}")
 else:
     while numberInput != midVal:
         mid = (lower + upper) // 2
         midVal = arr4[mid]
         if numberInput == midVal:
-            print(f"{numberInput} found at {mid}")
+            print(f"{numberInput} found at {mid} of array {arr4}")
         elif numberInput > midVal:
             lower = mid + 1
         elif numberInput < midVal:
