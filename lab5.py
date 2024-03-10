@@ -13,24 +13,14 @@ arr2 = [13, 3, 5, 8, 2, 16, 14]
 
 
 maxVal = arr2[0]
-minVal = arr2[1]
+minVal = arr2[0]
 
 
 for i in arr2:
-    if maxVal > i:
-        print("max")
-
-    elif maxVal < i:
+    if i > maxVal:
         maxVal = i
-
-for i in arr2:
-    if minVal < i:
-        print("min")
-    elif minVal > i:
+    elif i < minVal:
         minVal = i
-    else:
-        print("bruh")
-
 
 
 print(f"This is the given array: {arr2}")
